@@ -1,0 +1,47 @@
+<!-- res/layout/activity_register.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:background="#399"
+    tools:context=".giris">
+
+    <EditText
+        android:id="@+id/giriseditemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="E-posta"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/giriseditsifre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/giriseditemail"
+        android:layout_marginTop="8dp"
+        android:hint="Şifre"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/giriseditsifre"
+        android:layout_marginTop="16dp"
+        android:onClick="GirisYap"
+        android:text="Giriş Yap" />
+    <Button
+        android:id="@+id/btnkayit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonRegister"
+        android:layout_marginTop="16dp"
+        android:text="Kaydol" />
+
+</RelativeLayout>
